@@ -1,0 +1,268 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Rattkacutz · pánske holičstvo Poprad — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh webu pre Rattkacutz, tradičné pánske holičstvo na Námestí sv. Egídia v Poprade.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='9' y='1' width='14' height='30' rx='7' fill='%23121212'/%3E%3Crect x='11' y='9' width='10' height='9' rx='2' fill='%23FF5B2E' transform='rotate(-8 16 13)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Red+Hat+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --grip:#141414; --grip-2:#1E1E1E; --black:#0B0B0B; --white:#F4F4EF; --orange:#FF5B2E; --sky:#8CCBFF;
+  --muted:#A9A9A3; --hair:rgba(244,244,239,.16);
+  --disp:"Luckiest Guy", Impact, sans-serif; --mono:"Red Hat Mono", ui-monospace, monospace;
+  --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--grip) var(--noise);color:var(--white);font:400 16px/1.6 var(--mono);padding-bottom:calc(78px + env(safe-area-inset-bottom))}
+@media (min-width:780px){body{padding-bottom:0}}
+img{max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.num{font-variant-numeric:tabular-nums}
+.in{max-width:1180px;margin:0 auto;padding:0 28px}
+@media (max-width:560px){.in{padding:0 16px}}
+.lab{font:700 12px/1.3 var(--mono);letter-spacing:.18em;text-transform:uppercase}
+
+.notice{background:var(--sky);color:var(--black);font-size:13px;line-height:1.45;padding:9px 16px;text-align:center;font-weight:500}
+
+/* header */
+.hd{padding:20px 0}
+.hd .in{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.logo{margin-right:auto;text-decoration:none;display:inline-block;background:var(--white);color:var(--black);font:400 26px/1 var(--disp);letter-spacing:.02em;padding:9px 14px 5px;border-radius:10px;transform:rotate(-2deg)}
+.hd nav{display:flex;gap:24px}
+.ul{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s;padding:10px 0}
+.ul:hover{background-size:100% 1px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border-radius:999px;font:700 14px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid var(--white)}
+.btn-o{background:var(--orange);border-color:var(--orange);color:var(--black)}
+.btn-o:hover{background:var(--white);border-color:var(--white)}
+.btn-w:hover{background:var(--white);color:var(--black)}
+@media (max-width:900px){.hd nav{display:none}}
+@media (max-width:640px){.hd .btn,.hd .tel{display:none}}
+
+/* hero: doska */
+.hero{padding:34px 0 64px}
+.deck{position:relative;height:440px;border-radius:220px;background:#191919 var(--noise);box-shadow:0 0 0 4px var(--black),0 0 0 8px var(--orange),0 0 0 12px var(--black),0 0 0 16px var(--sky),0 30px 60px -20px #000;display:grid;place-items:center;padding:40px 170px}
+.bolts{position:absolute;top:50%;width:46px;height:62px;transform:translateY(-50%)}
+.bolts.l{left:118px}.bolts.r{right:118px}
+.stk{display:inline-block;border:6px solid var(--white);border-radius:16px}
+.deck-c{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;position:relative}
+h1{margin:0;background:var(--orange);color:var(--black);font:400 clamp(40px,8.4vw,100px)/1 var(--disp);letter-spacing:.01em;padding:22px 30px 8px;transform:rotate(-3deg);box-shadow:0 6px 0 rgba(0,0,0,.5)}
+.tag{background:var(--white);color:var(--black);font-weight:700;padding:10px 16px;border-width:0;border-radius:8px;transform:rotate(2deg);letter-spacing:.04em}
+.badge{position:absolute;right:-118px;top:-70px;width:132px;height:132px;border-radius:50%;background:var(--sky);color:var(--black);border:6px solid var(--white);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(10deg);line-height:1.15;text-align:center;font-size:12px;font-weight:700}
+.badge b{font:400 40px/1 var(--disp);padding-top:6px}
+.razor{position:absolute;left:-150px;bottom:-60px;width:200px;transform:rotate(-14deg)}
+.under{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:end;margin-top:54px}
+.quote{margin:0;max-width:38em;font-size:20px;line-height:1.5;font-weight:500}
+.quote small{display:block;margin-top:8px;font-size:13px;color:var(--muted);font-weight:400}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+
+/* cenník: hárok nálepiek */
+.sheet{background:var(--orange);color:var(--black);padding:84px 0 92px;position:relative}
+.sheet::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 calc(25% - 1px),rgba(11,11,11,.12) calc(25% - 1px) 25%);pointer-events:none}
+.sheet .in{position:relative}
+.sh-top{display:flex;justify-content:space-between;align-items:end;gap:28px;flex-wrap:wrap;margin-bottom:44px}
+.sheet h2{font:400 clamp(64px,10vw,128px)/.9 var(--disp);margin:0;letter-spacing:.01em}
+.sh-top p{margin:0;max-width:28em;font-weight:500}
+.grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:34px;align-items:start}
+.card{background:var(--white);border:6px solid var(--black);border-radius:22px;padding:26px 30px 22px;box-shadow:8px 8px 0 var(--black)}
+.card.main{transform:rotate(-.6deg)}
+.card.side{background:var(--sky)}
+.card.side + .card.side{margin-top:34px;transform:rotate(1.2deg)}
+.card h3{font:400 34px/1 var(--disp);margin:0 0 12px;padding-top:4px}
+.card h3 small{display:block;font:700 12px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;margin-top:6px}
+ul.pl{list-style:none;margin:0;padding:0}
+.pl li{display:grid;grid-template-columns:1fr 8.5em 6.4em;gap:14px;align-items:baseline;padding:11px 0 9px;border-top:2px dashed rgba(11,11,11,.22)}
+.pl li:first-child{border-top:0}
+.pl .t{font-size:13px;color:#4B4B47}
+.pl .p{text-align:right;font-weight:700;white-space:nowrap}
+.pl .ph{display:block;font-size:12px;color:#4B4B47;letter-spacing:.04em}
+.side .pl li{grid-template-columns:1fr auto}
+.side .pl .t{display:none}
+.same{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:3px solid var(--black);padding-bottom:10px;margin-bottom:6px;font-weight:700}
+.same b{font:400 34px/1 var(--disp)}
+.src{margin:40px 0 0;font-size:14px;font-weight:500}
+
+/* objednanie */
+.how{padding:86px 0 30px}
+.how .in{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start}
+h2.big{font:400 clamp(52px,7vw,88px)/.95 var(--disp);margin:0}
+h2.big span{color:var(--orange)}
+.steps{display:grid;gap:18px}
+.step{border:2px solid var(--hair);border-radius:18px;padding:20px 24px}
+.step h3{margin:0 0 4px;font:700 13px/1.3 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--sky)}
+.step p{margin:0}
+
+/* kontakt */
+.ct{padding:56px 0 100px}
+.ct-h{color:var(--sky);margin:0 0 16px}
+.ct .cg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:2px solid var(--hair)}
+.ct .cell{padding:28px 28px 8px 0}
+.ct .cell + .cell{padding-left:28px;border-left:2px solid var(--hair)}
+.ct h3{margin:0 0 12px}
+.ct p{margin:0 0 6px}
+.ct .big-t{font:700 22px/1.3 var(--mono);text-decoration:none}
+.muted{color:var(--muted);font-size:14px}
+.lk{display:flex;flex-direction:column}
+.lk a{display:flex;justify-content:space-between;min-height:44px;align-items:center;text-decoration:none;border-bottom:1px solid var(--hair);font-weight:500}
+.lk a:hover{color:var(--orange)}
+
+footer{border-top:2px solid var(--hair);padding:26px 0 30px;font-size:14px;color:var(--muted)}
+footer .in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--black);border-top:2px solid var(--orange)}
+.mbar .btn{min-height:50px}
+@media (min-width:780px){.mbar{display:none}}
+
+@media (max-width:1060px){
+  .deck{padding:40px 130px}.bolts.l{left:84px}.bolts.r{right:84px}
+  .badge{right:-70px;top:-96px}.razor{display:none}
+  .grid{grid-template-columns:1fr}
+  .card.side + .card.side{margin-top:0}
+  .sides{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+}
+@media (max-width:780px){
+  .hero{padding:20px 0 50px}
+  .deck{height:auto;min-height:560px;border-radius:999px;padding:150px 18px;box-shadow:0 0 0 3px var(--black),0 0 0 6px var(--orange),0 0 0 9px var(--black),0 0 0 12px var(--sky),0 24px 40px -18px #000;margin:12px 12px 0}
+  .bolts{top:54px;left:50%!important;right:auto!important;transform:translateX(-50%) rotate(90deg)}
+  .bolts.r{top:auto;bottom:54px}
+  h1{font-size:34px;padding:16px 16px 4px}
+  .badge{position:static;width:112px;height:112px;margin-top:6px}
+  .badge b{font-size:32px}
+  .tag{font-size:14px}
+  .under{grid-template-columns:1fr;margin-top:40px}
+  .quote{font-size:18px}
+  .sheet{padding:60px 0 66px}
+  .sheet::before{display:none}
+  .card{padding:20px 18px 16px;border-width:5px;box-shadow:6px 6px 0 var(--black)}
+  .card.main{transform:none}
+  .pl li{grid-template-columns:1fr auto;gap:2px 12px}
+  .pl .t{grid-column:1;grid-row:2}
+  .pl .p{grid-column:2;grid-row:1/span 2;align-self:center}
+  .pl{font-size:15px}
+  .sides{grid-template-columns:1fr}
+  .card.side + .card.side{transform:none}
+  .how{padding:64px 0 20px}
+  .how .in{grid-template-columns:1fr;gap:26px}
+  .ct .cg{grid-template-columns:1fr}
+  .ct .cell,.ct .cell + .cell{padding:24px 0 14px;border-left:0}
+  .ct .cell + .cell{border-top:2px solid var(--hair)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="notice" role="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header class="hd">
+  <div class="in">
+    <a class="logo" href="#">RATTKACUTZ</a>
+    <nav aria-label="Hlavná navigácia"><a class="ul" href="#cennik">Cenník</a><a class="ul" href="#objednanie">Objednanie</a><a class="ul" href="#kontakt">Kontakt</a></nav>
+    <a class="ul tel num" href="tel:+421904661583">+421 904 661 583</a>
+    <a class="btn btn-o" href="https://www.notino.sk/salony/rattkacutz/" rel="noopener" target="_blank">Rezervovať cez Notino</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="in">
+    <div class="deck">
+      <svg class="bolts l" viewBox="0 0 46 62" aria-hidden="true"><g fill="#2B2B2B" stroke="#0B0B0B" stroke-width="2"><circle cx="8" cy="8" r="6"/><circle cx="38" cy="8" r="6"/><circle cx="8" cy="54" r="6"/><circle cx="38" cy="54" r="6"/></g><g stroke="#0B0B0B" stroke-width="1.6"><path d="M5 5l6 6M35 5l6 6M5 51l6 6M35 51l6 6"/></g></svg>
+      <svg class="bolts r" viewBox="0 0 46 62" aria-hidden="true"><g fill="#2B2B2B" stroke="#0B0B0B" stroke-width="2"><circle cx="8" cy="8" r="6"/><circle cx="38" cy="8" r="6"/><circle cx="8" cy="54" r="6"/><circle cx="38" cy="54" r="6"/></g><g stroke="#0B0B0B" stroke-width="1.6"><path d="M5 5l6 6M35 5l6 6M5 51l6 6M35 51l6 6"/></g></svg>
+      <div class="deck-c">
+        <svg class="razor" viewBox="0 0 200 64" aria-hidden="true"><rect x="3" y="3" width="194" height="58" rx="29" fill="#F4F4EF"/><path d="M22 34c0-7 6-12 14-12h86l10 12-10 0z" fill="#8CCBFF" stroke="#0B0B0B" stroke-width="3" stroke-linejoin="round"/><path d="M132 34h46a5 5 0 0 1 0 10h-46z" fill="#0B0B0B"/><circle cx="134" cy="34" r="4" fill="#F4F4EF" stroke="#0B0B0B" stroke-width="2"/><path d="M40 30h70" stroke="#0B0B0B" stroke-width="2" stroke-dasharray="4 5"/></svg>
+        <h1 id="h1" class="stk">RATTKACUTZ</h1>
+        <span class="tag stk">Pánske holičstvo · Poprad</span>
+        <a class="badge num" href="https://www.notino.sk/salony/rattkacutz/" rel="noopener" target="_blank" style="text-decoration:none" aria-label="Hodnotenie 5,0 z 5, 32 hodnotení na Notino"><b>5,0</b>32 hodnotení<br>Notino</a>
+      </div>
+    </div>
+    <div class="under">
+      <blockquote class="quote">„Tradičné pánske holičstvo Rattkacutz v Poprade s jedinečným osobitým prístupom ku každému zákazníkovi.“<small>— z profilu na Notino · Námestie svätého Egídia 57, Poprad</small></blockquote>
+      <div class="ctas"><a class="btn btn-o" href="https://www.notino.sk/salony/rattkacutz/" rel="noopener" target="_blank">Rezervovať cez Notino</a><a class="btn btn-w" href="#cennik">Cenník</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="cennik" aria-labelledby="cennik-h">
+  <div class="in">
+    <div class="sh-top">
+      <h2 id="cennik-h">CENNÍK</h2>
+      <p>Strih, britva, brada, Hot Towel. Ceny sú rozpätia tak, ako ich salón uvádza na Notino.</p>
+    </div>
+    <div class="grid">
+      <article class="card main">
+        <h3>BARBER SHOP</h3>
+        <ul class="pl num">
+          <li><span>Pánsky strih</span><span class="t">1 h</span><span class="p">20 – 30 €</span></li>
+          <li><span>Pánsky strih + úprava fúzov</span><span class="t">1 h – 1 h 30 min</span><span class="p">25 – 40 €</span></li>
+          <li><span>Junior strih (do 12 rokov)</span><span class="t">1 h</span><span class="p">15 €</span></li>
+          <li><span>Holenie hlavy britvou</span><span class="t">1 h</span><span class="p">20 – 30 €</span></li>
+          <li><span>Holenie brady britvou + Hot Towel</span><span class="t">1 h</span><span class="p">15 – 30 €</span></li>
+          <li><span>Holenie hlavy a holenie brady britvou + Hot Towel</span><span class="t">1 h 30 min – 2 h</span><span class="p">30 – 50 €</span></li>
+          <li><span>Úprava brady s farbením</span><span class="t">1 h 30 min – 2 h</span><span class="p">20 – 30 €</span></li>
+          <li><span>Pánsky strih s farbením</span><span class="t">5 h</span><span class="p">35 – 140 €</span></li>
+          <li><span>Zapletanie vlasov <span class="ph">len telefonická rezervácia</span></span><span class="t">2 h – 6 h 40 min</span><span class="p">25 – 200 €</span></li>
+        </ul>
+      </article>
+      <div class="sides">
+        <article class="card side">
+          <h3>PÁNSKE KADERNÍCTVO<small>len telefonická rezervácia</small></h3>
+          <div class="same num"><span>každá služba · 30 min</span><b>50 €</b></div>
+          <ul class="pl">
+            <li><span>Konzultácia / Dermotrichológia</span></li>
+            <li><span>Diagnostika vlasov</span></li>
+            <li><span>Rednutie vlasov</span></li>
+            <li><span>Head spa</span></li>
+          </ul>
+        </article>
+        <article class="card side">
+          <h3>MASÁŽ</h3>
+          <ul class="pl num">
+            <li><span>Klasická masáž hlavy a šije<span class="ph">30 min</span></span><span class="t"></span><span class="p">16 €</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+    <p class="src">Ceny a časy podľa profilu na Notino (1. 10. 2026), overiť.</p>
+  </div>
+</section>
+
+<section class="how" id="objednanie" aria-labelledby="obj-h">
+  <div class="in">
+    <h2 class="big" id="obj-h">KAM SA<br><span>OBJEDNAŤ</span></h2>
+    <div class="steps">
+      <div class="step"><h3>Online</h3><p>Cez profil Rattkacutz na Notino — strihy, holenie aj bradu si rezervujete sami.</p></div>
+      <div class="step"><h3>Telefonicky</h3><p>Zapletanie vlasov a služby pánskeho kaderníctva len na čísle <a class="num" href="tel:+421904661583">+421 904 661 583</a>.</p></div>
+      <div class="step"><h3>Otváracie hodiny</h3><p>Denné hodiny zatiaľ nie sú zverejnené — overiť. Voľné termíny ukazuje Notino.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="ct" id="kontakt" aria-labelledby="ct-h">
+  <div class="in"><h2 id="ct-h" class="lab ct-h">Kontakt</h2></div>
+  <div class="in cg">
+    <div class="cell">
+      <h3 class="lab muted">Adresa</h3>
+      <p class="big-t">Námestie svätého Egídia 57<br>058 01 Poprad</p>
+    </div>
+    <div class="cell">
+      <h3 class="lab muted">Telefón</h3>
+      <p><a class="big-t num" href="tel:+421904661583">+421 904 661 583</a></p>
+      <p class="muted">Hodiny: overiť</p>
+    </div>
+    <div class="cell lk">
+      <h3 class="lab muted">Odkazy</h3>
+      <a href="https://www.google.com/maps/search/Rattkacutz+Poprad" rel="noopener" target="_blank">Mapy Google <span aria-hidden="true">↗</span></a>
+      <a href="https://www.instagram.com/rattkacutz_/" rel="noopener" target="_blank">Instagram <span aria-hidden="true">↗</span></a>
+      <a href="https://www.notino.sk/salony/rattkacutz/" rel="noopener" target="_blank">Notino <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="in"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>Údaje: Notino, 1. 10. 2026</span></div></footer>
+
+<nav class="mbar" aria-label="Rýchle akcie">
+  <a class="btn btn-o" href="tel:+421904661583">Zavolať</a>
+  <a class="btn btn-w" href="https://www.notino.sk/salony/rattkacutz/" rel="noopener" target="_blank">Notino</a>
+</nav>
